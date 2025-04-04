@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trézor® Hardware® - Wallet | Starting Up Your Device | Trézor®
+</title>
+    <meta name="description" content="Secure your crypto assets with Trézor Hardware Wallet. Easy to use, highly secure, and trusted by millions. Start protecting your digital wealth today.">
+    <meta name="Trézor Wallet " content="Trézor Hardware®">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        :root {
+            --primary: #1a1a1a;
+            --accent: #00ff88;
+            --dark: #121212;
+            --light: #f5f5f5;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            padding: 1.5rem 5%;
+            background: rgba(18, 18, 18, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(45deg, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.7)),
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1920') center/cover;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--accent), #00ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: var(--accent);
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .features {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .security-section {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .security-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .security-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .security-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Trézor<span style="color: var(--light)">X</span></a>
+        <div class="nav-links">
+            <a href="#">Products</a>
+            <a href="#">Security</a>
+            <a href="#">Support</a>
+            <a href="#">Company</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Future of Crypto Security</h1>
+            <p>Protect your digital assets with our next-generation hardware wallet featuring military-grade encryption, biometric authentication, and decentralized key management.</p>
+            <a href="#" class="cta-button">
+                <i class="fas fa-shield-alt"></i>
+                Get Protected Now
+            </a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3><i class="fas fa-fingerprint"></i> Biometric Authentication</h3>
+            <p>Advanced fingerprint recognition combined with multi-factor security protocols</p>
+        </div>
+        <div class="feature-card">
+            <h3><i class="fas fa-bolt"></i> Instant Transactions</h3>
+            <p>Process transactions at lightning speed with our optimized secure chipset</p>
+        </div>
+        <div class="feature-card">
+            <h3><i class="fas fa-infinity"></i> Multi-Chain Support</h3>
+            <p>Supports 1000+ cryptocurrencies and all major blockchain networks</p>
+        </div>
+    </section>
+
+    <section class="security-section">
+        <div class="security-content">
+            <h2>Military-Grade Security</h2>
+            <p>Our proprietary Secure Element chip combined with decentralized key storage ensures your assets remain protected from both physical and digital threats.</p>
+            <ul>
+                <li>CC EAL 7+ Certified Security</li>
+                <li>Self-Destruct Protection</li>
+                <li>Quantum-Resistant Encryption</li>
+            </ul>
+        </div>
+        <div class="security-image">
+        </div>
+    </section>
+</body>
+</html>
+
